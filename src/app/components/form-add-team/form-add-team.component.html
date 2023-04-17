@@ -1,0 +1,40 @@
+<div class="content">
+    <form id="savetm" (ngSubmit)="save()">
+      <div class="row m-4">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="teams.nombre" name="nombre">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control"  placeholder="Estadio" [(ngModel)]="teams.estadio" name="estadio">
+        </div>
+      </div>
+      <div class="row m-4">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Sitio Web" [(ngModel)]="teams.sitioWeb" name="sitio">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nacionalidad" [(ngModel)]="teams.nacionalidad" name="nacionalidad">
+        </div>
+      </div>
+      <div class="row m-4">
+        <div class="col">
+          <input type="date" class="form-control" placeholder="Fundacion" [(ngModel)]="teams.fundacion" name="fundacion">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Entrenador" [(ngModel)]="teams.entrenador" name="entrenador">
+        </div>
+      </div>
+      <div class="row m-4">
+        <div class="col">
+          <input type="number" class="form-control" placeholder="Capacidad" [(ngModel)]="teams.capacidad" name="capacidad">
+        </div>
+        <div class="col ">
+          <input type="number" class="form-control" placeholder="Valor" [(ngModel)]="teams.valor" name="valor">
+        </div>
+      </div>
+      <div class="row m-4">
+        <div class="col"></div>
+        <div class="col justify-content-end"> <button class="btn btn-primary" > Guardar </button></div>
+      </div>
+    </form>
+  </div>
